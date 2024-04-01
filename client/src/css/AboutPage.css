@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --hovering: rgb(193, 86, 39);
+    --text-color: rgb(26, 65, 34);
+    --header-text: "F37 Caslon", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.header{
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 131px;
+    background-color: #fff;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px
+}
+.header p{
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+.header span{
+    cursor: pointer;
+}
+.header p:hover{
+    color: var(--hovering)
+}
+.header button{
+    background-color: var(--hovering);
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.header button:hover{
+    background-color: rgb(218, 96, 43)
+}
+.upper{
+    font-size: 30px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+.lower{
+    font-size: 15px;
+    color: #000;
+    opacity: 50%;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.memorable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background-color: rgb(26, 65, 34, 0.1);
+}
+.memorable h4{
+    margin: auto;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+    opacity: 40%;
+    margin-right: 545px;
+}
+.memorable h2{
+    font-size: 70px;
+    font-family: var(--header-text);
+    color: var(--text-color);
+    text-transform: capitalize;
+    width: 60%;
+    text-align: center;
+}
+.memorable p{
+    width: 85%;
+    text-align: center;
+    color: var(--text-color);
+    line-height: 25.7px;
+    font-size: 25px;
+    opacity: 70%;
+}
+.memorable-images{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: 20px;
+    gap: 30px;
+}
+.memorable-images img{
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 300px 300px 0 0;
+}

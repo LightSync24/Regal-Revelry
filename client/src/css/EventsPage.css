@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --hovering: rgb(193, 86, 39);
+    --text-color: rgb(26, 65, 34);
+    --header-text: "F37 Caslon", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    overflow-x: hidden;
+}
+
+.events-header{
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: -40px;
+}
+
+.events-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: px;
+}
+.events-left h4{
+    font-size: 30px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.events-left p{
+    font-size: 15px;
+    color: #000;
+    opacity: 50%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.events-username{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: default;
+}
+.events-username span{
+    text-transform: capitalize;
+    opacity: 70%;
+}
+.events-username button{
+    background-color: var(--hovering);
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 15px;
+    padding: 6px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+.events-username button:hover{
+    transform: scale(1.05);
+    background-color:  rgb(218, 96, 43);
+}
+
+.eventsHero{
+    background-image: url('../assets/EventsPage/EventsPage.jpg');
+    height: 500px;
+    background-position: center;
+    background-size: contain;
+}
+.event-circle{
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    position: relative;
+    left: calc(50% - 200px);
+    z-index: 0;
+}
+.events-hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.events-hero-text h3{
+    font-family: var(--header-text);
+    color: var(--text-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 50%;
+    z-index: 1;
+    margin-top: -25px;
+    margin-bottom: -20px;
+}
+.events-hero-text h2{
+    font-family: var(--header-text);
+    color: var(--text-color);
+    font-size: 90px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin-top: -20px;
+}
+.events-hero-text p{
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--text-color);
+    opacity: 60%;
+    z-index: 1;
+}
+
+.events-body{
+    margin-top: 40px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+.options label{
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+.options select{
+    padding: 10px;
+    background-color: rgb(240, 244, 237);
+    border-radius: 10px;
+    outline: none;
+    font-size: 13px;
+}
+.options section option{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: var(--text-color);
+    background-color: rgb(240, 244, 237);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.options option{
+    background-color: #fff;
+    font-size: 17px;
+}
+
+.eventsInfo {
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 20px;
+    background-color: rgb(26, 65, 34);
+    color: rgb(180, 199, 163);
+}
